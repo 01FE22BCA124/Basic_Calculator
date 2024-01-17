@@ -44,6 +44,16 @@ class Calci{
      float Div( float num1, float num2){
         return num1/num2;   
      }
+
+    /**
+     * The function "square" takes a float number as input and returns the square of that number.
+     * 
+     * @param num1 A floating-point number that represents the number to be squared.
+     * @return the square of the input number.
+     */
+     float square(Float num1){
+        return num1*num1;
+     }
      /**
       * The main function creates an instance of the Calci class and performs addition, subtraction,
       * multiplication, and division operations on two numbers.
@@ -53,14 +63,15 @@ class Calci{
 
         float num1=1;
         float num2=1;
-
+        
+float sqaured_result=c.square(num1);
 
         System.out.println("sum of numbers :" + c.Add(num1, num2));
         System.out.println("difference of numbers :" + c.Diff(num1,num2));
 
         System.out.println("product of numbers :" + c.Mul(num1,num2));
         System.out.println("division of numbers :" +c.Div(num1,num2));
-
+        System.out.println("squared result=" + sqaured_result);
 
      }
 
